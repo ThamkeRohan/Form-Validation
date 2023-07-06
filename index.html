@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer type="module"></script>
+    <title>Form Validation</title>
+</head>
+<body>
+    <div class="form-container">
+        <h1 class="heading">Form Validation</h1>
+        <form action="" class="form">
+            <div class="form-field">
+                <label for="">Username</label>
+                <input type="text" class="username-input input">
+                <div class="error-msg username-error-msg">Username must be between 4 to 20 characters and must contain alphanumeric characters</div>
+            </div>
+            <div class="form-field">
+                <label for="">Phone Number</label>
+                <input type="text" class="phone-number-input input">
+                <div class="error-msg phone-number-error-msg">Phone Number must be a 10 digit number</div>
+            </div>
+            <div class="form-field">
+                <label for="">Email</label>
+                <input type="text" class="email-input input">
+                <div class="error-msg email-error-msg">Invalid Email</div>
+            </div>
+            <div class="form-field">
+                <label for="">Password</label>
+                <input type="text" class="password-input input">
+                <div class="error-msg password-error-msg">Password must be more than 8 characters long and should have at least one lowercase character, one uppercase character, one number and one special character in (!@#$%^&*)</div>
+            </div>
+            <div class="form-field">
+                <button class="submit-btn" type="submit">submit</button>
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>
