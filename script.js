@@ -1,9 +1,9 @@
 import Validation from "./Validation.js";
 
-const usernameInput = document.querySelector(".username-input");
-const phoneNumberInput = document.querySelector(".phone-number-input");
-const emailInput = document.querySelector(".email-input");
-const passwordInput = document.querySelector(".password-input");
+const usernameInput = document.getElementById("username");
+const phoneNumberInput = document.getElementById("phone-number");
+const emailInput = document.getElementById("email");
+const passwordInput = document.getElementById("password");
 
 const usernameErrorMsg = document.querySelector(".username-error-msg");
 const phoneNumberErrorMsg = document.querySelector(".phone-number-error-msg");

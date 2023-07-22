@@ -2,47 +2,64 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Quicksand;
 }
-body{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items:center;
+.background-container{
+    width: 100vw;
     height: 100vh;
-    background-color:rgb(236, 183, 236);
-    font-family: 'Josefin Sans', sans-serif;
+    background-image: url("background_image.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .form-container{
-    background-color: white;
-    width: 400px;
-    border-radius: 10px;
-    padding: 30px;
+    background-color: rgba(128, 128, 128, 0.699);
+    width: 50%;
+    min-width: 400px;
+    max-width: 600px;
+    padding: 40px 30px;
+
 }
-.form-container .heading{
+.form-container .form-heading{
     text-align: center;
+    color: white;
+    font-weight: normal;
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
-.form-field{
-    margin: 20px 0;
+.form-container .form .input-group{
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
 }
-.form-field .input{
-    height: 2rem;
-    padding: 0.3rem;
-    font-size: 1.2rem;
-    border-radius: 4px;
+.form-container label{
+    font-size: 1.5em;
 }
-.form-field label{
-    font-size: 1.1rem;
-    color: gray;
+.form-container .form input{
+    background-color: rgba(206, 204, 204, 0.342);
+    border: 1px solid black;
+    outline: none;
+    font-size: 1.5em;
+    padding: 0.1em 0.3em;
 }
-.form-field .error-msg{
-    color: rgb(253, 51, 85);
+.form-container .form input:focus{
+    background-color: rgba(178, 178, 243, 0.432);
+}
+
+.form-container .error-msg{
+    font-size: 1em;
+    color: rgb(220, 20, 20);
     display: none;
 }
-.form-field .submit-btn{
-    width: 40%;
-    height: 2rem;
-    font-size: 1.2rem;
-    margin: auto;
+.form-container .form .submit-btn{
+    width: 100%;
+    font-size: 1.5em;
+    padding: 0.3em;
+    margin-top: 15px;
+    cursor: pointer;
+    background-color: rgba(134, 134, 248, 0.377);
+    border: 1px solid rgba(51, 51, 163, 0.877);
+    color: white;
 }
